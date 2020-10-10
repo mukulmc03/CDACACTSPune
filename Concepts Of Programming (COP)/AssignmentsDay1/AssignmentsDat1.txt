@@ -1,0 +1,45 @@
+1. Get yourself acquainted with java environment. Find out "javac" &  "java" in your JDK box.
+
+2. Understand the system variable : PATH
+
+3. Write a program to take "name" as command line argument and print "Hello "+<name> on the console?
+
+> java Hello Kaif
+Hello Kaif
+
+
+4. Use java.util.Scanner class to take "name" as input from User and print "Hello"+<name> on the console?  (String name = scan.next())
+
+> java Hello
+Enter your name : Kaif
+Hello Kaif
+
+========================================================================
+
+1. Write a java program to take three numbers from command line and print the average ?
+> java Avg 5 6 4
+Average=5
+
+2. Write a java program to calculate simple interest, get the required inputs from command line ?
+   SI = (principal * rate * years)/100
+   
+3. Write a java program to convert temperature from celsius to fahrenheit, get input from command line ?
+(C-0)/100 = (F-32)/180
+C = (5/9)*(F-32)
+F = (9*C/5) + 32
+
+4. Use, java.util.Scanner class for all the above assignments.
+==========================================================================
+
+1. Write a program to calculate the monthly salary of an employee : 
+	take input for basic salary,
+	HRA is 40% of basic salary,
+	PF amount to be deducted is 12% of basic,
+	Medical allowance is Rs 1200 per month, 
+	Traveling allowance is Rs 800 per month,
+	Professional tax to be deducted is Rs 300.
+
+2. Write a program to check whether a given number is EVEN or ODD ?
+3. Write a program to enter the age of a person and check whether the person is eligible for voting or not ?[optional]
+
+4. Write a program to calculate the factorial of the given number?
