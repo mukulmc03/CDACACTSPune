@@ -1,0 +1,20 @@
+## Set up eclipse, Start using eclipse for all assignments.
+
+1. 
+Write a java class Rectangle with fields width & height. 
+Create an instance method to calculate area of the rectangle.
+Create another class having main to test area of rectangle.
+
+2. 
+Create a class named 'Student' with String variable 'name' and integer variable 'roll_no'. 
+Assign the value of roll_no as '2' and that of name as "John" by creating an object of the class Student.
+
+
+3. Write a program to print the area and perimeter of a triangle having sides of 3, 4 and 5 units by creating a class named 'Triangle'
+
+4. 
+Write a program that would print the information (name, year of joining, salary, address) of three employees by creating a class named 'Employee'. The output should be as follows:
+Name        Year of joining        Address
+Robert            1994                64C- WallsStreat
+Sam                2000                68D- WallsStreat
+John                1999                26B- WallsStreat
