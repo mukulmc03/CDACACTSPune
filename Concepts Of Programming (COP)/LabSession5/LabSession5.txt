@@ -1,0 +1,12 @@
+Write Java programs to:
+• Calculate average of numbers using Array
+• Reverse an array
+• Sort strings in alphabetical order
+• Sort an array in ascending order
+• Convert char Array to String
+• Add two Matrix using Multi-dimensional Arrays
+• Find out the highest and second highest numbers in an array
+• Concatenate two arrays
+
+
+
