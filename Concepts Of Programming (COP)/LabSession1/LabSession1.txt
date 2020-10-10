@@ -1,0 +1,6 @@
+Write Java programs to:
+• Print Hello World
+• Add two numbers/binary numbers/characters
+• Calculate compound interest
+• Calculate power of a number
+• Swap two numbers
