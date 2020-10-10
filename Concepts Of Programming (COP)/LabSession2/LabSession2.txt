@@ -1,0 +1,4 @@
+Write Java programs to:
+• Calculate area of rectangle
+• Calculate area and circumference of circle using multiple classes
+• Java program to find ASCII value of a character
