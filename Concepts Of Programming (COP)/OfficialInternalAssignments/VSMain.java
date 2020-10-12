@@ -10,11 +10,9 @@ public class VSMain {
 		System.out.println("Please, enter Radius of Sphere: ");
 		double radius = sc.nextDouble();
 		
-		Vos vs = new Vos();
-		vs.Vos(radius);
+		Vos vs = new Vos(radius);
 		
-		Sos ss = new Sos();
-		ss.Sos(radius);
+		Sos ss = new Sos(radius);
 		
 		sc.close();
 	}
