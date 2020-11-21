@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 | PS2 Day3</title>
+</head>
+<body>
+	<div style="border: 1px solid blue;">
+		<fieldset style="width: 50%;">
+			<legend>Your Details:</legend><br><br>
+			1. Name
+			<input type="text" name="name" placeholder="First and last name"><br>
+			2. Email
+			<input type="email" name="email" placeholder="example@domain.com"><br>
+			3. Phone
+			<input type="tel" name="phone" placeholder="Eg. +447500000000"><br><br>	
+		</fieldset>
+		<fieldset style="width: 50%;">
+			<legend>Delivery address</legend><br><br>
+			1. Address
+			<textarea style="width: 70%; height: 100px;">
+			</textarea><br>
+			2. Post Code
+			<input type="number" name="pscode"><br>
+			3. Country 
+			<input type="text" name="country"><br><br>
+		</fieldset>
+		<fieldset style="width: 50%;">
+			<legend>Card Details</legend>
+			<ol>
+				<li><fieldset>
+					<legend>Card Type</legend>
+					<ol>
+						<li><input type="radio" name="visa">VISA</li>
+						<li><input type="radio" name="amex">AmEX</li>
+						<li><input type="radio" name="mastercard">Mastercard</li>
+					</ol>
+				</fieldset></li>
+				<li>Card Number<input type="number" name="cardno"></li>
+				<li>Security Code<input type="number" name="seccode"></li>
+				<li>Name on card<input type="text" name="nameoncard"></li>
+				<br><br>
+			</ol>
+		</fieldset>
+		<input type="submit" value="Buy It!" style="margin-top: 1%; margin-left: 1%; margin-bottom: 1%;">
+	</div>
+</body>
+</html>
