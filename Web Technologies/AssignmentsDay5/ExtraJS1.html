@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>
+            Extra | JS | PS1
+        </title>
+        <script>
+            /* WAP in Java to maintain temperatures in a fixed array. Provide following methods:
+                 initTemp() – put initial hardcoded values into array
+                 meanTemp() – finds the mean temperature among all temperatures
+                 maxTemp()
+                 minTemp()
+                 displayTemps() */
+            var arr = [];
+            function initTemp(){
+                arr.push(90, 14, 22, 53, 45);
+                return arr;
+            }
+
+            function meanTemp(arr){
+                var sum = 0, mean;
+                for(var i = 0; i < arr.length; i ++){
+                    sum = sum + arr[i];
+                }
+                mean = sum / arr.length;
+                return mean
+            }
+
+            function maxTemp(arr){
+                var max = arr[0];
+                for(var i = 0; i < arr.length; i ++){
+                        if(arr[i] > max){
+                            max = arr[i];
+                        }
+                    }
+                return max;
+            }
+
+            function minTemp(arr){
+                var min = arr[0];
+                for(i = 0; i < arr.length; i ++){
+                    if(arr[i] < min){
+                        min = arr[i];
+                    }
+                }
+                return min;
+            }
+
+            function dispTemp(arr){
+                for(i = 0; i < arr.length; i ++){
+                    document.write("Temp at index " + i + " is : " + arr[i] + "<br>");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            document.write("Initial Array is : " + initTemp() + "<br>");
+            document.write("Mean of Array is :" + meanTemp(arr) + "<br>");
+            document.write("Maximum from Array is : " + maxTemp(arr) + "<br>");
+            document.write("Minimum from Array is : " + minTemp(arr) + "<br>");
+            dispTemp(arr);
+        </script>
+    </body>
+</html>

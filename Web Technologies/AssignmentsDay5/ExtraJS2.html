@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            Extra | JS | PS2
+        </title>
+        <script>
+            /* WAP to create a simple initialized int array with 5 integers. Iterate thru the array and find sum
+                and average of all elements. */
+        
+            function myFun(){
+                var arr = [];
+                arr.push(parseInt(document.getElementById("element1").value));
+                arr.push(parseInt(document.getElementById("element2").value));
+                arr.push(parseInt(document.getElementById("element3").value));
+                arr.push(parseInt(document.getElementById("element4").value));
+                arr.push(parseInt(document.getElementById("element5").value));
+
+                document.getElementById("resultArray1").value = arr;
+
+                var sum = 0;
+                for(var i = 0; i < arr.length; i ++){
+                    sum = sum + arr[i];
+                }
+                document.getElementById("sumOfArray").value = sum;
+
+                var average = sum / arr.length;
+                document.getElementById("averageOfArray").value = average;
+            }
+        </script>
+    </head>
+    <body>
+        Enter Element 1 of Array : <input type="number" id="element1" style="width: 8%;"><br>
+        Enter Element 2 of Array : <input type="number" id="element2" style="width: 8%;"><br>
+        Enter Element 3 of Array : <input type="number" id="element3" style="width: 8%;"><br>
+        Enter Element 4 of Array : <input type="number" id="element4" style="width: 8%;"><br>
+        Enter Element 5 of Array : <input type="number" id="element5" style="width: 8%;"><br>
+        <input type="button" value="Get Result" onclick="myFun()"><br><br>
+        Entered Array : <input type="text" readonly id="resultArray1" style="margin-left: 12%; width: 15%;"><br><br>
+        Sum Of elements of Array : <input type="text" readonly id="sumOfArray" style="width: 8%; margin-left: 4.7%;"><br><br>
+        Average Of elements of Array : <input type="text" readonly id="averageOfArray" style="width: 8%; margin-left: 2.4%;"><br><br>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Extra | JS | PS3
+        </title>
+        <script>
+            /* WAP to create an new empty array. Read the contents of above array (in 2 nd problem
+                statement) and for every element, find square of the number and store into new array. */
+
+            function myFun(){
+                var arr = [];
+                arr.push(parseInt(document.getElementById("element1").value));
+                arr.push(parseInt(document.getElementById("element2").value));
+                arr.push(parseInt(document.getElementById("element3").value));
+                arr.push(parseInt(document.getElementById("element4").value));
+                arr.push(parseInt(document.getElementById("element5").value));
+
+                document.getElementById("resultArray1").value = arr;
+
+                var arr1 = [];
+                for(var i = 0; i < arr.length; i ++){
+                    arr1[i] = Math.pow(arr[i], 2);
+                }
+                document.getElementById("squaresOfArray").value = arr1;
+            }
+        </script>
+    </head>
+    <body>
+        Enter Element 1 of Array : <input type="number" id="element1" style="width: 8%;"><br>
+        Enter Element 2 of Array : <input type="number" id="element2" style="width: 8%;"><br>
+        Enter Element 3 of Array : <input type="number" id="element3" style="width: 8%;"><br>
+        Enter Element 4 of Array : <input type="number" id="element4" style="width: 8%;"><br>
+        Enter Element 5 of Array : <input type="number" id="element5" style="width: 8%;"><br>
+        <input type="button" value="Get Result" onclick="myFun()"><br><br>
+        Entered Array : <input type="text" readonly id="resultArray1" style="margin-left: 14.6%; width: 15%;"><br><br>
+        New Array Of square of elements : <input type="text" readonly id="squaresOfArray" style="width: 8%; margin-left: 2.4%; width: 15%;"><br><br>
+    </body>
+</html>
