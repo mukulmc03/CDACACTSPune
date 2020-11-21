@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+</head>
+<body>
+<form action="#" style="width: 50%;">
+	<fieldset>
+		<legend>Create Profile</legend>
+		&nbsp;<label for="fname">First Name</label><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fname"><br><br>
+		&nbsp;<label for="lname">Last Name</label><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lname"><br><br>
+		&nbsp;<label for="dob">Date Of Birth</label><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="dob"><br><br>
+		&nbsp;<label for="gender">Gender</label><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="male"> Male
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="female"> Female<br><br>
+		&nbsp;<input type="submit" value="Create Profile"><br><br>
+	</fieldset>
+</form><br><br>
+<hr><br><br>
+<table border="1px solid black" width="50%">
+	<tr bgcolor="#ccccff">
+		<th>Name</th>
+		<th>Value</th>
+	</tr>
+	<tr>
+		<td>
+			<label for="name">Name</label>
+		</td>
+		<td>
+			<input type="text" name="name" style="width: 95.5%;">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="sex">Sex</label>
+		</td>
+		<td>
+			<input type="radio" name="male">Male<br>
+			<input type="radio" name="female">Female
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="eyecolour">Eye Colour</label>
+		</td>
+		<td>
+			<select>
+				<option>Green</option>
+				<option>Red</option>
+				<option>Blue</option>
+				<option>Black</option>
+				<option>Brown</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="checkallthatapply">Check All That Apply</label>
+		</td>
+		<td>
+			<input type="checkbox" name="6feet">Over 6 Feet Tall<br>
+			<input type="checkbox" name="200pounds">Over 200 Pounds
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			Describe your athletic ability:<br>
+			<input type="textarea" name="dyaa" style="width: 96.5%; height: 100px;">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<center><input type="submit" value="Enter My Information"></center>
+		</td>
+	</tr>
+</table><br><br>
+<hr><br><br>
+<table border="1px solid black" style="border-collapse: collapse; width: 50%; background-color: #f9bdc8">
+	<tr>
+		<td width="50%">
+			<label>Name</label>
+		</td>
+		<td>
+			<input type="text">
+		</td>
+	</tr>
+	<tr>
+		<td width="50%">
+			<label>Employee Code</label>
+		</td>
+		<td>
+			<input type="number" style="width: 15%;">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>Department</label>
+		</td>
+		<td>
+			<input type="radio">ADMIN<br>
+			<input type="radio">HR<br>
+			<input type="radio">TECHNICAL<br>
+			<input type="radio">ACCOUNTS<br>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>Date Of Joining</label>
+		</td>
+		<td>
+			<input type="date">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>Address</label>
+		</td>
+		<td>
+			<textarea style="width: 97%; height: 100px;"></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>Training Programs Attended</label>
+		</td>
+		<td>
+			<input type="checkbox">HTML/DHTML<br>
+			<input type="checkbox">JAVA<br>
+			<input type="checkbox">CLIENT/SERVER<br>
+			<input type="checkbox">.NET<br>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>Training Programs need to attend</label>
+		</td>
+		<td>
+			<textarea style="width: 35%; height: 30px;">JAVASCRIPT JSTRUCTS</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>Send the information at</label>
+		</td>
+		<td>
+			<a href="#">empinfo@patni.com</a>
+		</td>
+	</tr>
+</table>
+<br><br>
+<hr>
+<br><br>
+<div id="1" style="border: 1px solid; border-color: #8eaed5; width: 65%">
+	<h3>Internet Usgae Survey</h3>
+	<p>
+		&nbsp;This survey is being conducted to help idtify the Internet usage patterns of our customers.<br>
+		&nbsp;Please take a few moments to complete and submit the short form. Thank you for your cooperation.
+	</p><br>
+	<table>
+		<tr>
+			<td>
+				<label>What type of Internet connection do you have? <br>
+					   (Select One)</label>
+			</td>
+			<td>
+				<select size="4">
+					<option>Dial-up</option>
+					<option>DSL</option>
+					<option>High Speed Cable</option>
+					<option>Other</option>
+				</select><br><br><br>			
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>What type of computer you use most at home?</label>
+			</td>
+			<td>
+				<input type="radio" name="desktop">Desktop
+				<input type="radio" name="laptop">Laptop<br><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>How would you describe main reason to use Internet?</label>
+			</td>
+			<td>
+				<input type="radio" name="work">To do work related activities<br>
+				<input type="radio" name="school">To do School related activities<br>
+				<input type="radio" name="entertainment">For Entertainment Prrpose<br>
+				<input type="radio" name="other">Other
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<br><br><fieldset>
+					<legend>Types of Sites Visted</legend>
+					<label>What types of sites you access most often? <br>Check all that apply</label><br><br>
+					<input type="checkbox" name="si">Self Improvement<br>
+					<input type="checkbox" name="entertainment">Entertainment<br>
+					<input type="checkbox" name="newsandsports">News and Sports<br>
+					<input type="checkbox" name="reference">Reference<br>
+					<input type="checkbox" name="email">E-mail<br>
+				</fieldset>
+			</td>
+			<td>
+				<br><br><fieldset>
+					<legend>Time Spent Using Internet</legend>
+					<label>During an average week how long do you spend online?</label><br><br>
+					<input type="radio" name="0-3">0 - 3 Hours<br>
+					<input type="radio" name="4-6">4 - 6 Hours<br>
+					<input type="radio" name="7-11">7 - 11 Hours<br>
+					<input type="radio" name="11-14">11 - 14 Hours<br>
+					<input type="radio" name="15+">15+ Hours<br>
+				</fieldset>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<br><br>
+				<label>Please comment on your opinions concerning Internet privacy and safety:</label><br>
+				<textarea style="width: 99%; height: 100px;"></textarea>
+			</td>	
+		</tr>
+		<tr>
+			<td>
+				<br><br>
+				<label>First Name:</label>
+				<input type="text" name="fname" style="width: 68%">
+			</td>
+			<td>
+				<br><br>
+				<label>Last Name:</label>
+				<input type="text" name="lname" style="width: 68%;">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<br><br>
+				<label>Age:</label>
+				<input type="number" name="age" style="width: 20%;">
+			</td>
+			<td>
+				<br><br>
+				<label>ZIP Code:</label>
+				<input type="number" name="zipcode" pattern="[0-9]*" style="width: 40%;">
+			</td>
+		</tr>
+		<tr>
+			<td align="right">
+				<br><br>
+				<input type="submit" name="clicktosubmit" value="Click To Submit">
+				<br><br>
+			</td>
+			<td>
+				<br><br>
+				<input type="button" name="clear" value="Clear Form">
+				<br><br>
+			</td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>
