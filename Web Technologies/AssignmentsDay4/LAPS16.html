@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS16
+        </title>
+        <script>
+            function arrCmp(){
+                var result, flag = 0;
+                var num = document.getElementById("i1").value;
+                var arr = [3, 6, 12, 24, 48];
+                for(var i = 0; i < arr.length; i ++){
+                    if(num = arr[i]){
+                        flag = 1;
+                    }                    
+                }
+                if(flag = 1){
+                    result = "BINGO";
+                }
+                else{
+                    result = "Not present in Array";
+                }
+                document.getElementById("i2").value = result;
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            
+        </script>
+        Enter a number : <input type="number" id="i1"><br><br>
+        <input type="button" onclick="arrCmp()" value="Get Result" style="margin-left: 11.3%;"><br><br>
+        Result : <input type="text" id="i2" style="margin-left: 6%;">

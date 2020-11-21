@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS27
+        </title>
+        <script src="LAPS27.js">
+            /* Create a HTML page that accepts order details:
+                Following are validations required:
+                 All fields are mandatory
+                 Cust name must be greater than 5 characters.
+                 Billing date must be lesser than shipping date
+                If all goes well, display as follows; On clicking the display button, all form information must be
+                saved into an Order object. The details of this object must be displayed in a new window in a
+                neat tabular fashion(hint : use window.open()) */
+        </script>
+    </head>
+    <body>
+        Order ID : <input type="number" id="orderID" required><br><br>
+        Cust Name : <input type="text" id="custName" required min="6"><br><br>
+        Enter Billing Date : <input type="date" id="billingDate" required><br><br>
+        Enter Shipping Date : <input type="date" id="shippingDate" required><br><br>
+        Order Total : <input type="number" id="orderTotal" required><br><br>
+        <input type="button" value="Display" onclick="myFunction()"><br><br>
+    </body>
+</html>

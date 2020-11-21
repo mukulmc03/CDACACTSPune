@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS26
+        </title>
+        <script>
+            /*  Payment calculator
+                Create a following web page and calculate Payment Information based on Loan Information.
+                Validate Loan information textfields for numbers and Payment Information textfields should
+                be uneditable. The other constraints are as follows :
+                 Amount of Loan should not be more than 15 lakhs.
+                 Repayment period should be between 7 yrs to 15 yrs. */
+
+                function myFunction(){
+                    var loanAmount = document.getElementById("amt1").value;
+                    var interest = document.getElementById("per1").value;
+                    var rate = interest / (12 * 100);
+                    var years = document.getElementById("yr1").value;
+                    var months = 12 * years;
+                    var monthlyAmount, totalAmount, totalInterest;
+
+                    if(loanAmount <= 1500000 && years >= 7 && years <= 15){
+                        monthlyPaymentCalc();
+                        totalPaymentCalc();
+                        totalInterestCalc();
+                    }
+                    else{
+                        alert("Invalid Input");
+                    }
+
+                function monthlyPaymentCalc(){
+                    monthlyAmount = (loanAmount * rate * (Math.pow((1 + rate), months))) / 
+                                        (Math.pow((1 + rate), months) - 1);
+                    document.getElementById("pay1").value = monthlyAmount.toFixed(2);
+                    }
+
+                function totalPaymentCalc(){
+                        totalAmount = monthlyAmount * months;
+                        document.getElementById("tot1").value = totalAmount.toFixed(2);
+                    }
+
+                function totalInterestCalc(){ 
+                        totalInterest =   totalAmount - loanAmount;
+                        document.getElementById("int1").value = totalInterest.toFixed(2); 
+                    }
+                }
+        </script>
+    </head>
+    <body>
+        <h3>Enter Loan Information: </h3>
+        <ol>
+            <li>
+                Amount of the loan (any currency) <input type="number" id="amt1" style="margin-left: 3%;">
+            </li>
+            <li>
+                Annual percentage rate of Interest <input type="number" id="per1" style="margin-left: 2.8%;">
+            </li>
+            <li>
+                Repayment period in Years <input type="number" id="yr1" style="margin-left: 8%;">
+            </li><br>
+            <input type="button" value="Compute" onclick="myFunction()">    
+        </ol>
+        <h3>Payment Information: </h3>
+        <ol start="4">
+            <li>
+                Your monthly payment will be <input type="text" readonly id="pay1" style="margin-left: 6%;">
+            </li>
+            <li>
+                Your total payment will be <input type="text" readonly id="tot1" style="margin-left: 8.3%;">
+            </li>
+            <li>
+                Your total interest payment will be <input type="text" readonly id="int1" style="margin-left: 2.8%;">
+            </li>
+        </ol>
+    </body>
+</html>

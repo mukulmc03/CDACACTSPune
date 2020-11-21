@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS17
+        </title>
+        <script>
+            /* Create a custom object for rectangle and circle. Individual Rectangle objects should be able
+                to store dimension, and have methods to print area and perimeter. . Individual Circle objects
+                should be able to store radius, and have methods to print area and circumference. Display
+                dimensions, area and perimeter of rectangle and circle objects. Make use of pre-defined
+                objects */
+
+            function myFunction(){
+                var rectangle = {
+                        length : document.getElementById("l1").value,
+                        breadth : document.getElementById("b1").value,
+                        area : function(){
+                            return this.length * this.breadth;
+                        },
+                        perimeter : function(){
+                            return 2 * this.length + 2 * this.breadth;
+                        }
+                    };
+                
+                var pi = 3.14
+                var circle = {
+                        radius : document.getElementById("r1").value,
+                        area : function(){
+                            return pi * this.radius * this.radius;
+                        },
+                        circumference : function(){
+                            return 2 * pi * this.radius;
+                        }
+                    };
+
+                var aor = rectangle.area();
+                var por = rectangle.perimeter();
+                var aoc = circle.area();
+                var coc = circle.circumference();
+                
+                document.getElementById("ar1").value = aor;
+                document.getElementById("pr1").value = por;
+                document.getElementById("ac1").value = aoc;
+                document.getElementById("cr1").value = coc;
+            }
+                    
+        </script>
+    </head>
+    <body>
+        <h3>Rectangle : </h3>
+            Length of Rectangle : <input type="number" id="l1" style="margin-left: 5%;"><br><br>
+            Breadth of Rectangle : <input type="number" id="b1" style="margin-left: 4.4%;"><br><br>
+            Area of Rectangle : <input type="number" id="ar1" disabled style="margin-left: 6.4%;"><br><br>
+            Perimeter of Rectangle : <input type="number" id="pr1" disabled style="margin-left: 3%;"><br><br>
+        
+        <h3>Circle : </h3>
+            Radius of Circle : <input type="number" id="r1" style="margin-left: 7.5%;"><br><br>
+            Area of Circle : <input type="number" id="ac1" disabled style="margin-left: 9%;"><br><br>
+            Cirumference of Circle : <input type="number" id="cr1" disabled style="margin-left: 3.3%;"><br><br><br>
+            <input type="button" value="Get Result" onclick="myFunction()"><br>
+    </body>
+</html>

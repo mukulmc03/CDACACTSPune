@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS25
+        </title>
+        <script>
+            /* Assume we have this content in HTML <body>
+                <body>
+                <h3> Members of my Group are </h3>
+                <ol id="list">
+                </ol>
+                </body>
+                Also assume we have a array of person names (5 names).
+                Read from array and populate the above list with member names in bullet form. */
+                
+            function myFunction(){
+                var arr = ["Mukul","Rahul", "Bhushan", "Sara", "Ayush"];
+                var a = [];
+                for(var i = 0; i < arr.length; i ++){
+                    a[i] = "<li>" + arr[i] + "</li>";
+                }
+                document.getElementById("list").innerHTML = a.join(" ");
+            }    
+        </script>
+    </head>
+    <body>
+        <h3> Members of my Group are </h3>
+            <ol id="list">
+            </ol>
+            <script>
+                myFunction();
+            </script>
+    </body>
+</html>

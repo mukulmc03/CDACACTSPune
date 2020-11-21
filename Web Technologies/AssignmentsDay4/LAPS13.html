@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS13
+        </title>
+    </head>
+    <body>
+        <p id = "p1" style="color: red; text-align: center;"></p>
+        <script>
+            /* Create a web page that displays the current date in the format specified as in example
+                below. Also as per current time, suitable greeting should be printed.
+                Today is Monday, 24 April 2000, Welcome, and Good Afternoon to You.
+                Number of days left till end of year : <display> */
+                
+            var day, month, greet, newYear;       
+            var date = new Date();
+            var dayNum = date.getDay();
+            switch (dayNum) {
+                case 0:
+                    day = "Sunday";
+                    break;
+                case 1:
+                    day = "Monday";
+                    break;
+                case 2:
+                    day = "Tuesday";
+                    break;
+
+                case 3:
+                    day = "Wednesday";
+                    break;
+
+                case 4:
+                    day = "Thursday";
+                    break;
+                
+                case 5:
+                    day = "Friday";
+                    break;
+                
+                case 6:
+                    day = "Satuarday";
+                    break;
+
+                default:
+                    day = "Invalid Day";
+                    break;
+            }
+
+            var monthNum = date.getMonth();
+            switch (monthNum){
+                case 0:
+                    month = "January";
+                    break;
+                case 1:
+                    month = "February";
+                    break;
+
+                case 2:
+                    month = "March";
+                    break;
+                
+                case 3:
+                    month = "April";
+                    break;
+                
+                case 4:
+                    month = "May";
+                    break;
+                
+                case 5:
+                    month = "June";
+                    break;
+
+                case 6:
+                    month = "July";
+                    break;
+                
+                case 7:
+                    month = "August";
+                    break;
+                
+                case 8:
+                    month = "September";
+                    break;
+                
+                case 9:
+                    month = "October";
+                    break;
+                
+                case 10:
+                    month = "November";
+                    break;
+                
+                case 11:
+                    month = "December";
+                    break;
+
+                default:
+                    month = "Invalid Month";
+                    break;
+            }
+            
+            if(date.getHours() < 12){
+                greet = "Good Morning";
+            }
+            else if (date.getHours() < 18){
+                greet = "Good Afternoon";
+            }
+            else if(date.getHours() < 24){
+                greet = "Good Evening";
+            }
+            else{
+                greet = "Good Night";
+            }
+
+            newYear = new Date(date.getFullYear(), 11, 31);
+            if (date.getMonth()==11 && date.getDate()>31){
+                newYear.setFullYear(newYear.getFullYear()+1); 
+            }
+            var one_day=1000*60*60*24;
+
+            document.getElementById("p1").innerHTML = "Today is " + day + ", " + date.getDate() + " " 
+                + month + " " + date.getFullYear() + ", Welcome, and " + greet + " to you.<br><br> Number of days left till end of the year : " 
+                + Math.ceil((newYear.getTime() - date.getTime()) / (one_day));
+        </script>
+    </body>
+</html>

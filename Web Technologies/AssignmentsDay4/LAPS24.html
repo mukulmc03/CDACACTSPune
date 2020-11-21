@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS24
+        </title>
+        <script>
+            /* Assume I have an array of member names. Read the array and display all member names as
+                a string delimited by comma all in uppercase */
+
+            function myFunction(){
+                var arr = ["john", "steve", "ben", "damon", "ian"];
+                document.getElementById("arr1").value = arr;
+
+                for(var i = 0; i < arr.length; i ++){
+                    arr[i] = arr[i].toUpperCase();
+                }
+                document.getElementById("result").value = arr;
+            }
+        </script>
+    </head>
+    <body>
+        Provided Array is : <input type="text" disabled id="arr1"><br><br>
+        <input type="button" value="Get Result" onclick="myFunction()"><br><br>
+        Array in UpperCase is : <input type="text" disabled id="result"><br><br>
+    </body>
+</html>

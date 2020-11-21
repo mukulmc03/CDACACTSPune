@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS | LA | PS3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    
+</head>
+<body>
+    <script>
+        /*Write a program that accepts two numbers and a operator like (+,-,*, /) from user and
+            performs the appropriate operation indicated by the operator.*/
+            var x = parseInt(prompt("Enter first number"));
+            var y = parseInt(prompt("Enter second number"));
+            var op = prompt("Enter operation you want to perform");
+            
+            switch (op) {
+                case '+':
+                    document.write("Sum of " + x + " and " + y + " is: "+ (x + y));
+                    break;
+                
+                case '-':
+                    document.write("Subtraction of " + x + " and " + y + " is: " + (x - y));
+                    break;
+
+                case '*':
+                    document.write("Multiplication of " + x + " and " + y + " is: " + (x * y));
+                    break;
+                
+                case '/':
+                    document.write("Division of " + x + " and " + y + " is: " + (x / y));
+                    break;
+
+                default:
+                    document.write("Enter Valid Operator");
+                    break;
+            }
+    </script>
+</body>
+</html>

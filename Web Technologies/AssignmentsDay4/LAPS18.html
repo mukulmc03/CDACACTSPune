@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS18
+        </title>
+        <script>
+            /* An array contains a set of 5 words. Write Javascript to reverse each word and arrange the
+                resulting words in alphabetical order. Make use of functions */
+                
+                var arr = ["m", "u", "k", "u", "l"];
+                function sortArr(){
+                    return arr.sort();
+                }
+
+                function revArr(){
+                    var revArr = [], j = arr.length;
+                        for(var i = 0; i < arr.length; i ++){
+                            revArr[j - 1] = arr[i];
+                            j = j - 1;
+                        } 
+                    return revArr;
+                }
+        </script>
+    </head>
+    <body>
+        <script>
+            document.write("Given Array is : " + arr + "<br>");
+            document.write("Reversed Array : " + revArr() + "<br>");
+            document.write("Sorted Array is : " + sortArr() + "<br>");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            JS | LA |PS15
+        </title>
+        <script>
+            function employees(){
+                var emp = [];
+                emp.push(" " + document.getElementById("e1").value);
+                emp.push(" " + document.getElementById("e2").value);
+                emp.push(" " + document.getElementById("e3").value);
+                emp.push(" " + document.getElementById("e4").value);
+                emp.push(" " + document.getElementById("e5").value);
+                emp.push(" " + document.getElementById("e6").value);
+                document.getElementById("r1").innerHTML = emp.sort();
+            }
+        </script>
+    </head>
+    <body>
+        Emplopyee 1 : <input type="text" id="e1"><br><br>
+        Emplopyee 2 : <input type="text" id="e2"><br><br>
+        Emplopyee 3 : <input type="text" id="e3"><br><br>
+        Emplopyee 4 : <input type="text" id="e4"><br><br>
+        Emplopyee 5 : <input type="text" id="e5"><br><br>
+        Emplopyee 6 : <input type="text" id="e6"><br><br>
+        <input type="button" value="Submit" id="b1" onclick="employees()"><br><br>
+        Order of Names : <p id="r1"></p>
+    </body>
+</html>

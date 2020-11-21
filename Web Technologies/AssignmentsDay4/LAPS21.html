@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS21
+        </title>
+        <script>
+            // Create a HTML form that accepts start and end values and displays multiplication table
+            function mulTable(){
+                var sn = document.getElementById("sn1").value;
+                var en = document.getElementById("en1").value;
+                var mb = document.getElementById("mb1").value;
+                for(var i = sn; i <= en; i ++){
+                    document.getElementById("ta1").value +=  i + " times " + mb + " = " + (i * mb) + "\n"; 
+                }
+            }
+
+            function freset(){
+                document.getElementById("myf1").reset();
+            }
+        </script>
+    </head>
+    <body>
+        <form id="myf1" style="border: 1px solid blue;"><br><br>
+            <label style="margin-left: 10%;">Start Number: </label>
+            <input type="number" id="sn1" style="width: 10%;">
+            <label style="margin-left: 10%;">End Number: </label>
+            <input type="number" id="en1" style="width: 10%;">
+            <label style="margin-left: 10%;">Multiply By: </label>
+            <input type="number" id="mb1" style="width: 10%;"><br><br>
+            <center>
+                <input type="button" value="Times Table" onclick="mulTable()"><br><br>
+                <input type="button" value="Reset" onclick="freset()"><br><br>
+                <textarea id="ta1" rows="8" disabled style="width: 95%;">
+                </textarea><br><br>
+            </center>
+            
+
+        </form>
+    </body>
+</html>

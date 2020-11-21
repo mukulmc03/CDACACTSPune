@@ -1,0 +1,51 @@
+<htm>
+    <head>
+        <title>
+            JS | LA | PS19
+        </title>
+        <script>
+            /* Create an array that holds 4 employee objects and displays each emp detail in a table. Emp
+                details could be empid, empname and salary. Use for each loop to inspect all properties of
+                each object */
+
+                function myEmployee(){
+                    var empArr = [
+                                    {
+                                        empid : 101,
+                                        empname : 'Mukul',
+                                        salary : 50000
+                                    }, 
+                                    {
+                                        empid : 102,
+                                        empname : 'Rahul',
+                                        salary : 45000
+                                    },
+                                    {
+                                        empid : 103,
+                                        empname : 'Bhushan',
+                                        salary : 40000 
+                                    },
+                                    {
+                                        empid : 104,
+                                        empname : 'Sara',
+                                        salary : 35000
+                                    }
+                                ];
+                    
+                    document.write("<table>");
+		            for(i = 0;i < 4; i ++){	
+			            document.write("<tr>" + "<td>" + empArr[i].empid + " " + "</td>" + 
+                        "<td>" + empArr[i].empname + " " + "</td>" + "<td>"
+			            + empArr[i].salary + " " + "<br>" + "</td>" + "</tr>");
+		            }
+		            document.write("</table>");
+                }
+        </script>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            myEmployee();
+        </script>
+    </body>
+</htm>

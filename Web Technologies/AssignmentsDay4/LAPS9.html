@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS9
+        </title>
+    </head>
+    <script>
+        // Write Javascript function to find the sum and average of all passed parameters
+        function sumaverage(){
+                var sum = 0, avg, i;
+                for(i = 0; i < arguments.length; i ++){
+                    sum += arguments[i];
+                }
+                avg = sum / arguments.length;
+                return [sum, " " + avg];
+        }
+    </script>
+    <body>
+        <script>
+            document.write("Sum & Average : " + sumaverage(10, 20, 30));
+        </script>
+    </body>
+</html>

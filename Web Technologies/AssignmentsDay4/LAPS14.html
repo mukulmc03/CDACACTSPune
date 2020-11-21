@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS14
+        </title>
+        <script>
+            /* Write a function getWeekDay(date) to show the weekday in short format: ‘MO’, ‘TU’, ‘WE’,
+                ‘TH’, ‘FR’, ‘SA’, ‘SU’.
+                Eg : let date = new Date(2012, 0, 3); // 3 Jan 2012
+                alert( getWeekDay(date) );
+                // should output "TU" */
+            
+            var date = new Date(2020, 10, 17);
+            function getWeekDay(date){
+                var day;
+                var dayNum = date.getDay();
+                switch (dayNum) {
+                    case 0:
+                        day = "SU";
+                        break;
+                    case 1:
+                        day = "MO";
+                        break;
+                    case 2:
+                        day = "TU";
+                        break;
+
+                    case 3:
+                        day = "WE";
+                        break;
+
+                    case 4:
+                        day = "TH";
+                        break;
+                    
+                    case 5:
+                        day = "FR";
+                        break;
+                    
+                    case 6:
+                        day = "SA";
+                        break;
+
+                    default:
+                        day = "Invalid Day";
+                        break;
+                }
+                return day;
+            }
+        </script>
+    </head>
+    <body>
+        <p id="p1"></p>
+        <script> 
+            alert("Day on provided Date : " + getWeekDay(date));
+        </script>
+    </body>
+</html>

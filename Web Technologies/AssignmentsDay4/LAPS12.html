@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS12
+        </title>
+        <script>
+            function ci() {
+                var p = parseFloat(document.getElementById("princ").value);
+                var roi = parseFloat(document.getElementById("roi").value);
+                var t = parseFloat(document.getElementById("period").value);
+                var a = p * (Math.pow((1 + (roi/100)), t));
+                var ci = a - p;
+                document.getElementById("ci").value = ci;  
+            }
+        </script>
+    </head>
+    <body>
+        <hr style="border: 2px dashed black;">
+        <h1 style="text-align: center;">****** CALCULATE COMPOUND INTEREST ******</h1>
+        <hr style="border: 2px dashed black;">
+            <p style="margin-left: auto; text-align: center;">
+                Principal - <input type="number" id="princ" style="margin-left: 10%;"><br>
+                Rate Of Interest - <input type="number" id="roi" style="margin-left: 5.4%;"><br>
+                Period - <input type="number" id="period" style="margin-left: 11.6%;"><br><br>
+                <input type="button" value="Get Interest" onclick="ci()" style="margin-left: 16.8%;"><br><br>
+                Compound Interest - <input type="number" id="ci" style="margin-left: 3.5%;"><br>
+            </p>
+    </body>
+</html>

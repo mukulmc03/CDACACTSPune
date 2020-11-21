@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS20
+        </title>
+        <script>
+            /* Create a HTML form that accepts radius and displays the area and circumference of a circle.
+                Make use of Math object */
+                function arcf(){
+                    var r = document.getElementById("r1").value;
+                    var area = Math.PI * Math.pow(r, 2);
+                    var circum = 2 * Math.PI * r;
+                    document.getElementById("ar1").innerHTML = area.toFixed(2);
+                    document.getElementById("cf1").innerHTML = circum.toFixed(2);
+                }
+        </script>
+    </head>
+    <body>
+        <form action="#" style="border: 1px solid blue; width: 50%;"><br><br>
+            Enter Radius : <input type="number" id="r1" style="margin-left: 5%;"><br><br>
+            <button onclick="arcf()" style="margin-left: 5%;">Display</button><br><br> 
+            Area : <p id="ar1"> </p>
+            Circumference : <p id="cf1"> </p>
+        </form>
+    </body>
+</html>

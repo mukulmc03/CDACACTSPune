@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS23
+        </title>
+        <script>
+            /* Write a program that accepts (from the html form) a positive integer less than 1000 and
+                prints out the sum of the digits of this number.
+                    Enter a +ve no less than 1000: -4
+                    Entered number is out of range
+                    Enter a +ve no less than 1000: 1234
+                    Entered number is out of range
+                    Enter a +ve no less than 1000: 546
+                    Sum of the digits of 546 is 15 */
+            
+            function myFunction(){
+                var sum = 0;
+                var num = document.getElementById("num1").value;
+                var no = num;
+                if(num < 1000 && num > 0){
+                    while(num > 0){
+                        sum = sum + (num % 10);
+                        num = Math.floor(num / 10);
+                    }
+                    document.getElementById("result").innerHTML = "Sum of Digits of " 
+                    + no + " is " + sum;   
+                }
+                else{
+                    document.getElementById("result").innerHTML = "Entered number is out of range";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form style="border: 1px solid blue;"><br><br>
+            Enter a positive number less than 1000 : <input type="number" id="num1"><br><br>
+            <input type="button" value="Get Result" onclick="myFunction()" style="margin-left: 3%;"><br><br>
+            <p id="result"></p>
+        </form>
+    </body>
+</html>

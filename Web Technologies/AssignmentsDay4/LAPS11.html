@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS11
+        </title>
+        <script>
+            function fib(n) {
+                var n, a = 0, b = 1, c, i;
+                document.write("Fibonacci series upto " + n + " is : ");
+                for(i = 2 ; i <= n; i ++){
+                    c = a + b;
+                    a = b;
+                    b = c;
+                    document.write(c, " ");
+                } 
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            n = prompt("Enter a Number N");
+            fib(n);
+        </script>
+    </body>
+</html>

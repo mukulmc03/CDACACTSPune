@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS22
+        </title>
+        <script>
+            /* Create the HTML form given below. Use JS to manipulate strings. Display the output below
+                the button */
+            
+               /* var a = document.getElementById("ssms").value;
+                var b = document.getElementById("tuc").value;
+                var c = document.getElementById("tlc").value;
+                var d = document.getElementById("ts").value;
+                var e = document.getElementById("conc").value;
+                var f = document.getElementById("rep").value;
+                if(a.checked == true){
+                    consol  e.log(a);
+                }
+                else if(b.checked == true){
+                    document.write(b);
+                }*/
+            
+        </script>
+    </head>
+    <body>
+        <form style="border: 1px solid blue;"><br><br>
+            Enter a String: <input type="text" id="str1"><br><br>
+            Enter Sub String: <input type="text" id="str2"><br><br>
+            Replace with String: <input type="text" id="str3"><br><br>
+            <input type="radio" name="myRadio" id="ssms" value="Search substring in main String"> Search substring in main String 
+            <input type="radio" name="myRadio" id="tuc" value="To Upper Case">To Upper Case
+            <input type="radio" name="myRadio" id="tlc" value="To Lower Case">To Lower Case
+            <input type="radio" name="myRadio" id="ts" value="Trim spaces">Trim spaces
+            <input type="radio" name="myRadio" id="conc" value="Concatenate">Concatenate
+            <input type="radio" name="myRadio" id="rep" value="Replace">Replace<br><br>
+            <input type="button" value="Submit Query" id="btn" style="margin-left: 2%;"><br><br>
+            Result: <input type="text" id="result" disabled><br><br>
+            <script>
+                var res;
+                var str = document.getElementById("str1").value;
+                var substr = document.getElementById("str2").value;
+                var repstr = document.getElementById("str3").value;
+                var reg = new RegExp(repstr, "g");
+
+                const btn = document.querySelector("#btn");
+
+                btn.onclick = function (){
+                    const rbs = document.querySelectorAll('input[name="myRadio"]');
+                    let selectedValue;
+                    for (const rb of rbs) {
+                        if (rb.checked) {
+                            selectedValue = rb.value;
+                            break;
+                        }
+                    }
+                    if(selectedValue == "Search substring in main String"){
+                        res = ("Found at Index: " + str.search(substr));
+                        document.getElementById("result").value = res;
+                    }
+                    else if(selectedValue == "To Upper Case"){
+                        res = ("Upper Case: " + str.toUpperCase());
+                        document.getElementById("result").value = res;
+                    }
+                    else if(selectedValue == "To Lower Case"){
+                        res = ("Lower Case: " + str.toLowerCase());
+                        document.getElementById("result").value = res;
+                    }
+                    else if(selectedValue == "Trim spaces"){
+                        res = ("Trimmed: " + str.trim());
+                        document.getElementById("result").value = res;
+                    }
+                    else if(selectedValue == "Concatenate"){
+                        res = ("Concatenated: " + str.concat(" ", substr));
+                        document.getElementById("result").value = res;
+                    }
+                    else if(selectedValue == "Replace"){
+                        res = ("Replaced: " + str.replace(reg, " ")); //Incomplete
+                        document.getElementById("result").value = res;
+                    }
+                }
+
+            </script>
+        </form>
+    </body>
+</html>

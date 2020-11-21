@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS | LA | PS5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//Write a program to find sum of digits of given five-digit number.
+		var a = parseInt(prompt("Enter a number"));
+		var b, sum = 0;
+		while(a > 0){
+			b = a % 10;
+			sum = sum + b;
+			a = Math.floor(a / 10);
+		}
+		document.write("Sum of digits is : " + sum);
+	</script>
+</body>
+</html>

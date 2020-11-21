@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS10
+        </title>
+        <script>
+            /* Write a program to find the sum of squares of even numbers upto N (accept from user).
+            Make use of function */
+            function sumOfSqEvens(n) {
+                var i, sum = 0, n;
+                for(i = 1; i <= n; i ++){
+                    if(i % 2 == 0){
+                        sum = sum + i * i;
+                    }
+                }
+                return sum;
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            n = prompt("Enter a Number N");
+            document.write("Sum of Squares of Even Numbers upto " + n + " is : " + sumOfSqEvens(n));
+        </script>
+    </body>
+</html>

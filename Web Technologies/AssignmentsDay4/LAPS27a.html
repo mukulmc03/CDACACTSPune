@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS27a
+        </title>
+        <script src="LAPS27.js"></script>
+        </script>
+    </head>
+    <body>
+        <table border="1px solid black" style="border-collapse: collapse; width: 30%;">
+            <tr>
+                <td>Order ID</td>
+                <td id="td1"></td>
+            </tr>
+            <tr>
+                <td>Customer Name</td>
+                <td id="td2"></td>
+            </tr>
+            <tr>
+                <td>Billing Date</td>
+                <td id="td3"></td>
+            </tr>
+            <tr>
+                <td>Shipping Date</td>
+                <td id="td4"></td>
+            </tr>
+            <tr>
+                <td>Order Total</td>
+                <td id="td5"></td>
+            </tr>
+        </table>
+        <script>
+            var output = localStorage.getItem("orderList");
+            var orderR = JSON.parse(output);
+            document.getElementById("td1").innerHTML = orderR.orderID;
+            document.getElementById("td2").innerHTML = orderR.custName;
+            document.getElementById("td3").innerHTML = orderR.billingDate;
+            document.getElementById("td4").innerHTML = orderR.shippingDate;
+            document.getElementById("td5").innerHTML = orderR.orderTotal;
+            console.log(JSON.parse(output));
+        </script>
+        
+    </body>
+</html>
