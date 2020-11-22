@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>
+            JS | LA | PS28
+        </title>
+        <script>
+            function myFun(){
+                myObj = {
+                    name : document.getElementById("name").value,
+                    birthDate : document.getElementById("birthdate").value,
+                    emailId : document.getElementById("email").value,
+                    gender : function(){
+                        var gender = document.getElementsByName("gender");
+                        for(var i = 0; i < gender.length; i++) { 
+                            if(gender[i].checked) 
+                                return gender[i].value; 
+                        } 
+                    },
+                    luckyNumber : document.getElementById("luckynumber").value,
+                    favoriteFood : function(){
+                        var checkboxes = document.getElementsByName("favfood");
+                        for (var i = 0; i < checkboxes.length; i++) {
+                            if(checkboxes[i].checked)
+                                return checkboxes[i].value;
+                        }
+                    }
+                };
+                document.getElementById("resultName").innerHTML = "Name: " + myObj.name;
+                document.getElementById("resultBirthDate").innerHTML = "Birth Date: " + myObj.birthDate;
+                document.getElementById("resultEmailId").innerHTML = "Email Address: " + myObj.emailId;
+                document.getElementById("resultGender").innerHTML = "Gender: " + myObj.gender();
+                document.getElementById("resultLuckyNumber").innerHTML = "Lucky Number: " + myObj.luckyNumber;
+                document.getElementById("resultFavoriteFood").innerHTML = "Favorite Food: " + myObj.favoriteFood();             
+            }
+        </script>
+    </head>
+    <body>
+        <form style="border: 1px solid blue;"><br><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required pattern="[A-Za-z]{10}" title="Please provide only alphabets, 
+                Name should not be greater than 10 letters"><br><br>
+            <label for="birthdate">Birth Date:</label>
+            <input type="date" id="birthdate" value="1950-01-01" required><br><br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required title="Please provide valid email address"> &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;(Use format@company.com)<br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="male" value="Male">Male<br>
+            <input type="radio" name="gender" id="female" value="Female" style="margin-left: 5.8%;">Female<br><br>
+            <label for="luckynumber">Lucky Number:</label>
+            <input type="number" max="3" id="luckynumber" title="Please provide number less than 5 digits" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp; (A number between 1 and 100)<br><br>
+            <label for="favfood">Favorite Food:</label>
+            <input type="checkbox" name="favfood" id="pizza" value="Pizza">Pizza<br>
+            <input type="checkbox" name="favfood" id="pasta" value="Pasta" style="margin-left: 9.9%;">Pasta<br>
+            <input type="checkbox" name="favfood" id="chinese" value="Chinese" style="margin-left: 9.9%;">Chinese<br><br>
+            <input type="button" value="Send Data" onclick="myFun()" style="margin-left: 5%;"><br><br><br><br>
+            You Entered:<br><br>
+            <ul style="list-style-type: none;">
+                <li id="resultName"></li>
+                <li id="resultBirthDate"></li>
+                <li id="resultEmailId"></li>
+                <li id="resultGender"></li>
+                <li id="resultLuckyNumber"></li>
+                <li id="resultFavoriteFood"></li>
+            </ul> 
+        </form>
+    </body>
+</html>
