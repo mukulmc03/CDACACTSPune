@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>
+            BS | PS4
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container-fluid bg-primary">
+            <div class="col md-2 mt-2 p-3">
+                <h2 class="text-white">Adam's To Do List</h2>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 mt-2">
+                    <form id="add" class="form">
+                        <div class="form-group">
+                            <label for="task ">Task</label>
+                            <input id="task" class="form-control " type="text " name="task">
+                        </div>
+                        <div class="form-group">
+                            <label for="location ">Location</label>
+                            <input id="location" class="form-control " type="text " name="location">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="done" name="done">
+                            <label for="done">Done</label>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group">
+                                <button class="form-control bg-primary text-white">Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-8 mt-2">
+                    <table class="table table-striped table-bordered table-condensed">
+                        <tr>
+                            <th>Description</th>
+                            <th>Done</th>
+                        </tr>
+                        <tr>
+                            <td>Buy Flowers</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>Get Shoes</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>Collect Tickets</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Call joe</td>
+                            <td>No</td>
+                        </tr>
+    
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--      End    -->
+        <br><br><br>
+        <hr>
+        <hr>
+        <br><br>
+    </body>
+</html>
