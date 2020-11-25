@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            JQ | PS9
+        </title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" 
+                integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+                crossorigin="anonymous">
+        </script>
+        <script>
+            // Write a jQuery Code to get a single element (li) from a list. 
+            // Sample data: second list item is “Kiwi”
+            $(document).ready(function(){
+                var a = $("ul li:eq(1)").text();
+                alert(a);
+            });
+        </script>
+    </head>
+    <body>
+        <ul>
+            <li>Apple</li>
+            <li>Kiwi</li>
+            <li>Strawberry</li>
+        </ul>
+        <button id="btn1">Click</button>
+    </body>
+</html>

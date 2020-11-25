@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            JQ | PS4
+        </title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" 
+                integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+                crossorigin="anonymous">
+        </script>
+        <script>
+            //Change the text in the span, a child of '#target'
+            $(document).ready(function(){
+                $("#target").css({"background-color":"lightblue",
+                                  "border":"2px solid blue",
+                                  "padding":"100px"
+                                });
+                
+                $("#span1").css({"background-color":"yellow",
+                                 "border":"2px solid red",
+                                 "padding":"10px" 
+                                })
+                
+                $("#span1").hover(function(){
+                    $(this).text("hello");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="target">
+            <span id="span1">
+                span(Change Me!)
+            </span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            JQ | PS8
+        </title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" 
+                integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+                crossorigin="anonymous">
+        </script>
+        <script>
+            /* Write jQuery code to append a div element (and all of its contents) 
+                dynamically to the body element. Insert the following code within HTML 
+                <body> tag : <div><h1>JQuery Core</h1></div> */
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    $("body").append("<div><h1>JQuery Core</h1></div>");
+                    $("div").css({"border":"1px solid blue"});
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="btn1">Append</button>
+    </body>
+</html>

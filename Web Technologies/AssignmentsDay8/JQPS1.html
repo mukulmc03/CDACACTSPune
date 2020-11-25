@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            JQ | PS1
+        </title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+        </script>
+        <script>
+            //Find all h1 elements that are children of a div element and apply a background to them.
+            $(document).ready(function(){
+                $("div h1").css("background-color","red");
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Sample Data:</h3>
+        <h1>abc</h1>
+        <div id="div1">
+            <h1>div-1</h1>
+            <h1>div-2</h1>
+        </div>
+        <h1>xyz</h1>
+    </body>
+</html>

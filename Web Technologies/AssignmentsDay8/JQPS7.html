@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            JQ | PS7
+        </title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" 
+                integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+                crossorigin="anonymous">
+        </script>
+        <script>
+            /* Find the specific option tag text value of a given option.
+                For eg, show the text value associated with
+                second option (Should display Option-2) */
+                $(document).ready(function(){
+                    $("#btn1").click(function(){
+                        var selection = $("#myselect option:selected").val();
+                            document.write("Value of Option selected : " + selection);
+                    });
+                });
+        </script>
+    </head>
+    <body>
+        <h3>Sample Data: </h3>
+        <select id="myselect">
+            <option value="1">Option - 1</option>
+            <option value="2">Option - 2</option>
+            <option value="3">Option - 3</option>
+        </select>
+        <button id="btn1">Click Here</button>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            JQ | PS6
+        </title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" 
+                integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+                crossorigin="anonymous">
+        </script>
+        <script>
+            // Hide all the input elements within a form. 
+            // You may use one of the web page created in HTML lab
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    $("input").fadeOut(200);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <form>
+            Name : <input type="text"> <br>
+            Email : <input type="text"> <br>
+            Loaction : <select>
+                            <option> Sydney </option>
+                            <option> India </option>
+                            <option> UK </option>
+                       </select> <br>
+            Gender : <input type = "radio" name="FEMALE"> Female 
+                     <input type = "radio" name="MALE"> male <br>
+            Experience : <br> <textarea rows="3" cols="15">    </textarea>
+            <br> <input type="button" value="fadeOut" id="btn1">
+                  
+        </form>
+    </body>
+</html>

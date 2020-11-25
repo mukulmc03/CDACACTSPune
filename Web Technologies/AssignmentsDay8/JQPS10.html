@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            JQ | PS10
+        </title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" 
+                integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+                crossorigin="anonymous">
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    $("li").each(function(index){
+                        $("p").append(index + ": " + $(this).text() + "<br>");
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <ul id="mylist">
+            <li>Apple</li>
+            <li>Kiwi</li>
+            <li>Strawberry</li>
+        </ul><br>
+        <button id="btn1">Prepend</button><br>
+        <p>
+
+        </p>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            JQ | PS5
+        </title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" 
+                integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+                crossorigin="anonymous">
+        </script>
+        <style>
+            div{
+                border: 1px solid gray;
+                padding: 50px;
+                background-color: lightcoral;
+            }
+        </style>
+        <script>
+            //Change background color of the second 'div’.
+            $(document).ready(function(){
+                $("div:eq(1)").css({"background-color":"yellow"})
+            });
+        </script>
+    </head>
+    <body>
+        <div class="target">
+            Div 1
+        </div><br>
+        <div class="target">
+            Div 2
+        </div><br>
+        <div class="target">
+            Div 3
+        </div><br>
+    </body>
+</html>

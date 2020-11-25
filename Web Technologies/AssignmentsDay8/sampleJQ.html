@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>
+            JQ | Sample
+        </title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" 
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+            crossorigin="anonymous">
+        </script>
+        <script>
+        $(document).ready(function(){  
+            $("button").click(f1);             
+            function f1(){
+                $("p:even").fadeToggle();
+            }
+        });
+        </script>
+        <style>
+            div{
+                border: 1px solid blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 id="head1">Selectors in JQuery</h2>
+        <p>This is para outside any div</p>
+        <div id="firstdiv" class="mydiv">
+            <p>This is 1st para in 1st div</p>
+            <p>This is 2nd para in 1st div</p>
+        </div><br>
+        <div id="seconddiv" class="mydiv">
+            <p>This is 3rd para in 2nd div</p>
+        </div><br>
+        <div id="thirddiv" class="mydiv">
+            <ul>
+                <li>1st item</li>
+                <li>2nd item</li>
+                <li>3rd item</li>
+                <li>4th item</li>
+            </ul>
+        </div><br>
+        <div    >
+            <ul>
+                <li>1st item</li>
+                <li>2nd item</li>
+                <li>3rd item</li>
+                <li>4th item</li>
+            </ul>
+        </div><br>
+        <button id="btn1">Click Here</button>
+    </body>
+</html>
