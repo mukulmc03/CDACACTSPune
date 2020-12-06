@@ -1,0 +1,50 @@
+<!--
+    Create a IPL ticket booking form to accept spectator details.
+        All text fields are mandatory
+        EmailID and Confirm EmailId field values have to be same.
+        Cost of ticket will be picked up, based on the stand and floor selected. Use the table
+        provided to select the cost. The field cannot be an editable field.
+        If all the data is valid show an alert “All data entered correctly”
+        Depending on Stand and floor level selected, cost of ticket would be:
+        Make use HTML, HTML5, Javascript, CSS
+-->
+
+<html>
+    <head>
+        <title>
+            Internal Assignment | Question 1
+        </title>
+        <link rel="stylesheet" href="CSS/CSSAQ1.css">
+        <script src="JavaScript/JSAQ1.js"></script>
+    </head>
+    <body>
+        <form id="form1">
+            <br><br>
+            <label>Spectator Name: </label>
+            <input id="name" type="text" required><br><br>
+            <label>Email ID: </label>
+            <input id="email" type="email" required><br><br>
+            <label>Confirm Email ID: </label>
+            <input id="confirmEmail" type="email" required>
+            <p id="confirmMessage"></p><br><br>
+            <label>Select Stand: </label>
+            <select id="stand" onchange="myFun2()">
+                <option value="" selected disabled>Please Choose...</option>
+                <option value="platinumGallery">Platinum Gallery</option>
+                <option value="superHospitalityStand">Super Hospitality Stand</option>
+                <option value="northWestStand">North West Stand</option>
+                <option value="eastStand">East Stand</option>
+            </select><br><br>
+            <label>Select Floor: </label>
+            <select id="floor" onchange="myFun2()">
+                <option value="" selected disabled>Please Choose...</option>
+                <option value="firstFloor">First Floor</option>
+                <option value="secondFloor">Second Floor</option>
+            </select><br><br>
+            <label>Cost Of Ticket: </label>
+            <input id="costOfTicket" type="text" readonly><br><br>
+            <button id="bookNow" onclick="myFun1()">Book Now</button>
+            <br><br>
+        </form>
+    </body>
+</html>

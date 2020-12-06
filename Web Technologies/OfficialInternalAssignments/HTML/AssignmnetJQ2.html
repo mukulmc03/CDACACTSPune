@@ -1,0 +1,48 @@
+<!--
+    Create a jQuery webpage which accepts Shipping address and billing address from the user. If
+    the billing address and shipping address were same copy the shipping address details to billing
+    address and make it readonly
+-->
+
+<html>
+    <head>
+        <title>
+            Internal Assignment | JQuery | Question 2
+        </title>
+        <link rel="stylesheet" href="/CSS/CSSAJQ2.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js" 
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+            crossorigin="anonymous">
+        </script>
+        <script src="/JavaScript/JQAQ2.js"></script>
+    </head>
+    <body>
+        <div id="div1">
+            <h2 class="headings">Shopping</h2><br><br>
+            <label for="firstName">First Name: </label>
+            <input type="text" id="firstName"/><br>
+            <label for="lastName">Last Name: </label>
+            <input type="text" id="lastName"/>
+
+            <h4 class="headings">Shipping Address</h4>
+
+            <label for="address">Address: </label>
+            <input type="text" id="address"/><br>
+            <label for="cityStateZip">City, State, Zip: </label>
+            <input type="text" id="city"/>
+            <input type="text" id="state"/>
+            <input type="text" id="zip" inputmode="numeric">
+
+            <h4 class="headings">Billing Address</h4>
+
+            <input type="checkbox" id="billShipCheck"> Billing address & Shipping address are same<br>
+            <label for="billAddress" >Address: </label>
+            <input type="text" id="billAddress" class="billingAdd"/><br>
+            <label for="billCityStateZip">City, State, Zip: </label>
+            <input type="text" id="billCity" class="billingAdd"/>
+            <input type="text" id="billState" class="billingAdd"/>
+            <input type="text" id="billZip" class="billingAdd" inputmode="numeric" >
+        
+        </div>
+    </body>
+</html>

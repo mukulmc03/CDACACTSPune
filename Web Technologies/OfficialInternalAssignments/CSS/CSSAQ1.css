@@ -1,0 +1,14 @@
+#form1{
+    width: 50%;
+    border: 1px solid blue;
+}
+
+label{
+    margin-left: 2%;
+    display: inline-block;
+    width: 40%;
+}
+
+button{
+    margin-left: 2%;
+}

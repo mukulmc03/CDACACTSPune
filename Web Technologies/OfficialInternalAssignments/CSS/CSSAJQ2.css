@@ -1,0 +1,28 @@
+#div1{
+    border: 1px solid lightblue;
+}
+
+.headings{
+    margin-left: 10px;
+}
+
+label{
+    display: inline-block;
+    margin-left: 5%;
+    width: 10%;
+    text-align: right;
+}
+
+input{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#address, #billAddress{
+    width: 58.6%; 
+}
+
+#billShipCheck{
+    margin-left: 3%;
+}
+
