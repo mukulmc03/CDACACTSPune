@@ -1,0 +1,55 @@
+Day 3
+
+1. Start using STS 3.9.13 (Eclipse IDE with Spring)
+Choose frest workspace (new folder)
+
+1.5 Import supplied eclipse project , in your workspace, for revision
+
+2. Create a java applicstion for the following.
+ Create a Customer class , in com.app.core package , with data members (all private : tight encapsulation)
+name(String),email(String),age(int), creditLimit(double)
+
+2.1 Supply a parameterized constructor to accept all details from user
+
+2.2 Supply an argument less  constructor to init default name to "Riya" , email to "riya@gmail.com",age=25,creditLimit=10000
+
+2.3 Supply another constructor , to init default creditLimit to 10000, taking rest of the i/ps from user.
+
+2.4 Write a method , getDetails to return String form of customer name & credit limit details.
+2.5 Supply getter & setter for creditLimit.
+
+2.6 Create a TestCustomer class , under tester package.
+.Use scanner to accept user i/ps.
+Create 3 customers using 3 different constructors(2.1 : c1 ,2.2 : c2,2.3 :c3 )
+Display customer details of all customers.
+Prompt user , for changing creditLimit of the c3.
+Display new credit limit on the console.
+
+3. Complete pending assignments
+
+4. Optional Assignment
+
+Create java application for the following.
+Create Student class  in package com.cdac.core
+
+2.1 Every student must have   --- id(int) --, name (String), email(String), age(int),gpa(double)
+
+2.2 Add suitable parameterized constructor.
+Accept --id name,email,age only from user.
+
+2.3 Add a method fetchDetails to  fetch student details
+(ret type -- String)
+
+2.4 Add computeGPA method in Student class
+Accept 3 method arguments for : scores for quiz , test & assignments
+gpa should be computed on 20 % of quiz score, 50% of test score & 30% of assignment score.
+(Normalize it to 1-10 scale)
+
+2.5 Write a TestStudent class in tester package
+1. Admit 2 new Students , using scanner
+I/P student details (id name,email,age)
+
+2. Assign scores for 2 students(quiz , test , assignment all out of 100)
+
+3. Display name of topper(having higher GPA)
+
