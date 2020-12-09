@@ -1,0 +1,45 @@
+Day 2
+
+1. Solve Tank assignment along with memory picture.
+
+class Tank {
+  private int level;
+  Tank(int l)
+   {
+     level=l;
+   }
+  public void setLevel(int level1)
+  {
+    level=level1;
+  }
+  public int getLevel()
+  {
+    return level;
+  }
+}	
+
+public class Assignment {
+  public static void main(String[] args) {
+    Tank t1 = new Tank(10);
+    Tank t2 = new Tank(20);
+     s.o.p("1: t1.level: " + t1.getLevel() +
+          ", t2.level: " + t2.getLevel());
+    t1 = t2;
+    s.o.p("2: t1.level: " + t1.getLevel() +
+          ", t2.level: " + t2.getLevel());
+    t1.setLevel(27);
+     s.o.p("3: t1.level: " + t1.getLevel() +
+          ", t2.level: " + t2.getLevel());
+    t2.setLevel(t1.getLevel()+10);
+     s.o.p("4: t1.level: " + t1.getLevel() +
+          ", t2.level: " + t2.getLevel());
+  }
+}
+
+2. Complete day 1 assignment (without using IDE)
+set classpath , to run java application from anywhere.
+
+
+3. Display food menu to user. Assign fixed prices to food items.
+User will select items from menu along with the quantity. (eg 1. Dosa 2. Samosa 3. Rice 4. Noodles .......10 . Generate Bill ) When user enters 'Generate Bill' option, display total bill & exit.
+(Can use System.exit(0) to terminate java app or simply use exit flag)
