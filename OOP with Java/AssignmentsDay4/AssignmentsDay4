@@ -1,0 +1,44 @@
+Day 4
+1.
+Import day4.1 eclipse project in your workspace.
+In TestBoxArray.java , replace , for loop (for initializing box objs) by for-each loop
+Observe n conclude
+
+2. In the same src : 
+ Double box width for all boxes having volume > 100.(USE for-each & solve this)
+
+3. Create 2D array of double , to store values 
+from 100 to 200 (i.e actual values : 100.0,101.0......200.0) : use for loop
+Display these values using
+for loop
+for-each 
+Arrays class method : deepToString
+
+
+2. Create new eclipse project "day4_lab"
+Copy earlier created Point2D class in it (along with the package)
+Create a new TestPoints class in "com.app.tester" package for the following.
+
+1.1 Prompt user , how many points to plot?
+Create suitable array , to store Point2D type of references.
+
+1.2 Add a menu , Run the application till user chooses option 4 (exit)
+
+1 Plot a new point
+I/P --index , x & y
+eg : If user supplies 5 50 100
+Create a Point2D with x, y of (50,100) & its reference should be stored at the 5th index position in array.
+
+2 Display all points plotted so far. (Use for-each)
+Will null checking be required?
+
+3. Calculate distance
+I/P strt , end point indexes.
+eg : If user enters 2 6
+Find out the distance between 2nd & 6th point. (array indexes start from 0)
+
+10. Exit
+
+Note : Boundary condition checking & null checking is expected.
+(Meaning : if user supplies invalid indes , then give error message : invalid index --out of range
+If no point is plotted at user specified index , then give error message : invalid index -- no point plotted here.)
