@@ -1,0 +1,52 @@
+Day 6
+1. Complete pending assignment from Day 5.
+2. Solve this.
+
+2.1 Create inheritance hierarchy for fruits : in package : com.app.fruits
+Fruit,Apple,Orange,Cherry
+Add private data member "name" , in Fruit class , to accept a name of the fruit.
+(eg : "Kashmiri Apple" or "Nagpur Orange" ...)
+Add taste() method to display its taste.
+eg : public void taste()
+{
+   sop("No specific taste")
+}
+Apple : sweet
+eg : o/p : Kashmiri Apple is sweet in taste
+Orange : sour
+Cherry : sweet n sour 
+
+2.2 Create FruitUtils class. : in a package "utils"
+Add a static method , "addFruit" to add any fruit to the Fruit Basket.
+eg : public static void addFruit(Fruit f,Fruit[] basket1,int counter){
+basket1[counter]=f;
+}
+
+2.3. Write a Tester to create basket of fruits. : package "tester"
+Prompt for size of a fruit basket n create suitable data structure.
+(populate basket based upon user's choice)
+Menu 
+1. Add Apple
+Boundary checking
+sop("Enter name ");
+eg : addFruit(new Apple(sc.next()),basket,index);
+index++;
+2. Add Orange : boundary chk
+3. Add Cherry
+NOTE : 
+Accept name of the fruit form user.
+In above  options : you should call addFruit method of FruitUtils class & then chosen fruit should get added in the basket.
+4. Display taste of all fruits in the basket. : for-each
+eg : for (Fruit f : basket)
+        f.taste();
+10. Exit :  terminate the application.
+
+Weekend assignment :
+1. Reading assignment
+Explain , when you call System.out.println(ref) , how it calls ref.toString internally ?
+Hint : JavaDocs of java.io.PrintStream : look up println(Object o) method
+
+2. Solve the code snippets from questions.zip n guess what will happen ?
+1. Compile time error
+2. Run time error
+3. If no error , what will be output ?
