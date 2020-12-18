@@ -1,0 +1,26 @@
+Day 11
+Modify Day 10 customer class ,
+1. add these data members (to impose HAS-A relationship . Customer HAS-A Date of birth & Customer HAS-A CustomerType)
+
+1.1 Date Of Birth : java.util.Date
+1.2. CustomerType : enum 
+Create Enum in the same package as Customer , supply these constants
+SILVER,GOLD,PLATINUM
+2. Modify constructor to accept these additional details
+
+3. Modify toString suitably.
+
+4. Modify equality testing criteria
+2 customers are same if & only if their email & dob is same.
+How will you achieve this ?
+
+4. Add Validation rules
+4.1 Customer dob must be before 1st Jan 2020.
+(Can hardcode currently , later will be replaced by LocalDate API, to find the age of customer)
+
+4.2 Customer type must be either : SILVER OR GOLD OR PLATINUM
+
+5. Modify earlier Tester class suitably n test entire application
+
+Hint : refer to readme in enums : "regarding enums.txt"
+Use values & valueOf methods of Enum.
