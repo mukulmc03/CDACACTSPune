@@ -1,0 +1,32 @@
+Day 7
+1. Modify Day 5 , emp based assignemnt , to add abstraction
+Remove public double computeNetSalary(){return 0;}  , un necessary method definition from Emp class , replace it by abstract method. Make suitable changes n test complete business logic
+
+2. New Assignment for banking scenario
+Suppose Bank is supporting 3 different types of accounts
+1. Saving Account
+2. Current Account
+3. Loan Account
+Any bank account has  -- acct no(int : generated from static id generator, auto incremented),customer name(string), acct type(Saving/Current/Loan),balance(double)
+Add a method to fetch a/c summary (via toString)
+Add a method to compute income tax.
+Add methods
+public void withdraw(double amt) 
+public void deposit(double amt)
+
+Saving account addtionally has to maintain simple interest (computed with fixed interest rate= 5% )
+Add new functionality to apply interest to saving account.
+(Use simple interest formula : Simple interest=P N R /100) & add it to saving a/c balance.
+For saving account : To compute income tax = 10 % of the earned interest
+For current account : To compute income tax = 1 % on the current account balance
+Loan account additionally has : no of loan installments & EMI(monthly installment)
+Add new functionality to display loan details : to return no of installments n EMI
+For loan account : To compute income tax
+Formula : I tax= (5 % on the loan account balance) - (1 % of EMI)
+(to offer I tax rebate)
+
+Apply encapsulation , inheritance , polymorphism n abstraction suitably.
+Write a Tester class , for creating different type of accounts , in array based data structure  n test the functionality.
+
+
+
