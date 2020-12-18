@@ -1,0 +1,37 @@
+Day 10
+Continuation of Day 9 assignment , to add validation constraints .
+1. Continue with the same customer class.
+Unique ID of customer class : email
+Override equals method based upon the same.
+
+2. Create custom exception class : CustomerHandlingException , as a checked exception
+
+3. Add following validation rules , in a separate class CustomerValidations, using static validation methods
+Don't use method level exc handling , instead delegate exc handling to the caller(main class)
+3.1 email must be minimum 8 to max 15 chars long
+It should contain "@" n must end in ".com"
+Hint : Use String class methods : contains , endsWith
+
+3.2 Password minimum length 6 to 20 & must contain atleast one of the special characters : $ / @
+/# /* n must be alpha numeric.
+
+Help : If needed
+Use this regular expression : "((?=.*\\d)(?=.*[a-z])(?=.*[#@$*]).{6,20})"
+& use String class method : matches
+
+3.3 reg amount must be in the multiples of 500
+
+3.4 Duplicate email checking.(Must use equals here)
+
+
+4. Create a Tester for the following(similar to yesterday)
+1. Register new customer
+Accept all customer details. In case of a duplicate customer email, or any other validation failures , DO NOT register customer. 
+Give suitable error message(via catch block)
+Otherwise store customer details.
+
+2. Display all customers , from a specified city
+I/P : city name
+
+3. Exit
+
