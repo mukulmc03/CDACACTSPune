@@ -1,0 +1,35 @@
+Day 12
+1. Revise in the lab session , enums , nested classes n composition.
+
+2. Continue with Day 11 assignment
+Remove city : data member from Customer class.
+
+2.1 Add composition in Customer class (one-to-one association), to store Customer's address
+Rule : You should not allow any one to create address , without creating enclosing Customer object
+2.2 Add suitable method to assign customer's address , only after successful registration.
+2.3 Address details : city ,state ,country , phoneNo : all string type
+
+2.4 Add a new validation rule : 
+Currently we are supporting , customer registration from within India
+(i.e country=India)
+
+2.5 In Tester :
+1. Register Customer 
+I/Ps : email , password , name , registration amount , birth date 
+In case of successful registration (i.e no validation errs)
+Prompt for customer address 
+I/Ps : city ,state ,country , phoneNo
+Link address details to customer.
+
+2. Display all customers , from a specified city
+I/P : city name
+
+3. Change Phone no
+I/P : email, dob , password , new phone no.
+In case of success , show a mesg or supply error message via customer exception(in catch block)
+
+4. Display all customer details
+
+5. Exit
+
+
