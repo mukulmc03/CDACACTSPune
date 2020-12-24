@@ -1,0 +1,32 @@
+Day 14
+1. Revise collection framework overview , along with code samples.
+2. Solve
+Create a new eclipse project (day14_lab) . Copy core classes , custom excs , validation rules associated with Customer.
+NOTE : Some of the validation rules , which were based upon array, will have to be modified by Collection API
+Write a tester java application for the following
+Create empty ArrayList to store customer details.
+2.1 Customer Registration 
+I/P : email , password , name , registration amount , dob , customer type
+In case of no dup found add , customer details
+Don't link customer address here.
+API : contains , add
+
+2.2 Fetch Customer Details
+I/P : email , dob
+Return customer details , if found , otherwise display error mesg , via catch block
+API : indexOf , get
+
+2.3 Customer Login
+I/P : email , dob , password
+Display Login successful mesg in case of correct credentials, otherwise display error mesg , via catch block
+API : indexOf, get , getPassword , equals : String(pwd)
+
+2.4 Un Sub scribe customer
+I/P : email , dob
+Remove customer details n add a  successful mesg in case of correct credentials, otherwise display error mesg , via catch block
+API : indexOf , remove(index)
+OR
+remove(o)
+
+2.5 Display all customer details
+for-each / Iterator/ ListIterator/for loop
