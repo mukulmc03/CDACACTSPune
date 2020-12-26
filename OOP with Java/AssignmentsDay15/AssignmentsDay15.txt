@@ -1,0 +1,33 @@
+Day15
+1. Revise class work , by importing eclipse projects
+1.5 Solve this
+ Display names of  all emps whose adhar card is  created in specific month n year(v4.2) 
+i/p : month year
+LocalDate : API --getMonthValue() ,getYear())
+
+2. Replace JDK 7 Date time Handling API by Java 8 , in your Day 14 assignment (create a copy)
+
+3. Complete Pending work
+
+4. Solve this.
+
+4.1 Create a fixed size(10) list of Integers(v4.1)
+Display the elems : 6th,5th.....0th
+
+4.2 Create empty ArrayList to store local dates.(v4.2)
+Prompt user for entering reg dates n store them in AL
+Keep on accepting dates : till user enters "quit/Quit"
+Display accepted dates sorted in asc order.
+Method for sorting : Collections class API
+public static void sort(List<T> list)	
+
+5.  OPTIONAL(v4.3)
+Continue with Day 15 lab (customer based assignment)
+Add New Options
+5.1 Change Phone no
+I/P : email, dob , password , new phone no.
+In case of success , show a mesg or supply error message via customer exception(in catch block)
+
+5.2 Display phone nos  of all customers   , whose dob is within a range & who have paid reg amount > specified reg amount.
+I/P : begin_date , end_date , specific reg amount.
+API : LocalDate : isAfter , isBefore
