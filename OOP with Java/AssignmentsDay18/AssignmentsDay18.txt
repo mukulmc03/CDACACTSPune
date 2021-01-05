@@ -1,0 +1,41 @@
+Day 18
+1. Solve "geenric questions" supplied in today's help
+2. Create a linked list of integers , containg the elements (i.e references) : 1,2,3,4,....100
+Display it. 
+Shuffle the list randomely n display the contents.
+(Hint : Collections class API : shuffle)
+Can you use the same method to shuffle list of strings or fruits or emps?
+
+3. Create inheritance hierarchy : Emp , Mgr , SalesMgr
+Create empty ArrayList of emps.
+Create populated vector of SalesMgr (at least 3 records)
+Copy these 3 references from a vector to ArrayList
+(Hint : Collections class API : copy)
+Can you think of any other way to achieve it ?
+
+4. Revise Maps . 
+
+5. Solve this
+1.Create with  a Student class  having
+studentId(PRN : string),course(enum : SPRING, SPRING_BOOT,MERN,WT,DBT,DEVOPS,REACT),name,marks,birthDate(LocalDate)
+constr , toString
+Create Student management app for the following
+Store student details in a suitable data structure , ensuring constant time performance + powerful methods for CRUD operations.
+
+
+2. Student Admission
+No duplicate admission pls. 
+PRN : unique
+
+3. Fetch Student Details
+I/P : PRN 
+O/P student details or error mesg
+
+4. Display all student details
+no inputs
+
+5. Update marks of a particular student.
+I/P : PRN & new marks
+
+6. Cancel Admission
+I/P : PRN 
