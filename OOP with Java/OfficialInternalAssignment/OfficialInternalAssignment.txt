@@ -1,0 +1,62 @@
+
+JAVA Official INTERNAL Assignment 1
+Date of Assignment : 3rd Jan
+Date of Submission : 5th Jan
+
+
+Create a java application for a bookshop using suitable data structures.
+
+1. Shop has different categories (fiction,science,finance,yoga,meditation) of books.
+
+2. Each Category can contain multiple books.
+
+3. A Book 
+	1.1 Has a unique title.
+	1.2 It can have multiple authors.
+	Author has name & email address.
+	1.3 Book Has a category, price, publishDate , quantity & a rating 
+	(between 1-5)
+
+
+3. BookShop application has 2 types of users. 
+	3.1 Admin (Bookshop owner) user
+	email : admin
+	password : admin123
+
+	3.2 Customer : user who wants to purchase books from the shop.
+
+	Add 1 admin details & 5 customer details to a suitable data structure.
+	(hard code these details)
+	Add minimum 2 books under each category . 
+	Store these available books in a suitable data structure.
+
+	3.3 Develop ONLY customer use case currently.
+
+	Supply following options.
+
+	3.4 User(as a customer) must login before adding the 
+	books to the shopping cart.
+
+	3.5 After successful login , create empty cart .
+	Display available books in the shop ,  to the customer.
+
+	3.6 Logged in user , should be able to add a book to the cart.
+
+	3.7 Show Cart contents
+
+	3.8 Remove a book from the cart.
+
+	3.9 Check out(Log out / Exit)
+	Should display Total cart value & titles of the books purchased 
+	by the user(on separate lines) .
+ 	& terminate the application.
+
+NOTE : Currently application is not meant for multiple concurrent users , i.e only 1 user can login at any point in time
+ 	
+
+Marks Bifurcation
+a. Design - 3 Marks
+b. Exception Handling - 3 Marks
+c. Detailed Implementation - 3 Marks
+d. no compiler errors - 3 Marks
+e. Output - 3 Marks
