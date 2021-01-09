@@ -1,0 +1,18 @@
+ADS ASSIGNMENT DAY 2
+
+Q2.1 Define Stack as Abstract Data Type (ADT).
+
+Q2.2 Define Queue as Abstract Data Type (ADT).
+
+Q2.3 Implement a class for Stack ADT (defined in Q2.1), that implements stack using array. The class should accept the size of array during object creation (via Constructor).
+
+Q2.4 Write a small program that accept some input and displays the same in reverse other. Use stack class implemented in Q2.3, to reverse the data.
+
+Q2.5 Implement a class for Queue ADT (defined in Q2.2), that implements linear queue using array. The class should accept the size of array during object creation (via Constructor).
+
+Q2.6 Implement a class for Queue ADT (defined in Q2.2), that implements circular queue using array. The class should accept the size of array during object creation (via Constructor).
+
+Q2.7 Write a small program that uses the linear queue and circular queue implemented in Q2.5 and Q2.6 to demonstrate the condition when linear queue is full and empty at the same time, whereas circular queue didn't suffer from the problem at that time.
+
+Hint : Use interface to create an ADT.
+Hint : To implement an ADT, create a class that "implements" the interface.
