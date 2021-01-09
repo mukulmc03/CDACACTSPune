@@ -1,0 +1,18 @@
+ADS ASSIGNMENT DAY 3
+
+Q3.1 Implement a singly linked list class, to store integers, with following methods:
+
+ a) Add a number at the front of list.
+    void addAtFront(int no)
+
+b) Print all elements stored in the list.
+    void printList()
+
+ c) Count number of elements/nodes of the list. The function should return the count.
+    int count()
+
+d) Count frequency of a element in the list. The function should return the frequency.
+    int countFrequency(int no)
+
+e) Check if a given number is present in the list or not. Function should return true if number is present, false otherwise.
+    boolean find(int no)
