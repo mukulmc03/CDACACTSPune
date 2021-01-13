@@ -1,0 +1,12 @@
+ADS ASSIGNMENT DAY 4
+
+Q4.1  In the singly linked list class implemented in Q3.1, to store integers, add following method:
+ 
+a) Add a number at the end of list.
+    void addAtEnd(int no)
+
+Q4.2 Implement a singly linked list class, to store integers in sorted order, with following methods:
+ a) Insert a number to the linked list so that list remains sorted.
+    void insert(int no)
+ b) Print all elements stored in the list.
+    void printList()
