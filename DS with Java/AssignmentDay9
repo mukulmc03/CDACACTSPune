@@ -1,0 +1,7 @@
+ADS Assignment DAY 9
+
+Q9.1 Implemenet a Binary Search Tree class with following functions:
+
+ a) public void insert(int elem); // To add "elem" to a binary search tree
+ b) public boolean find(int elem); // Check if "elem" is present in the binary search tree or not. Return true/false.
+ c) public void print(); // Print the contents of binary search tree.

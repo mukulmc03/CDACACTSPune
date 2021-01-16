@@ -1,0 +1,13 @@
+ADS ASSIGNMENT DAY 6
+
+Q6.1  Implemenet following function for doubly linked list class, implemented in DList.java
+ a) public void delete(int elem)
+Verify the implementation by running the main() function present in DListApp01.java.
+
+Q6.2  Implement following functions for circular doubly linked list class.
+ a) Print all elements stored in the list. (Forward traversal)
+    public void printList()
+ b) Insert a number to the linked list so that list remains sorted.
+    public void insert(int elem)
+ c) Delete the element from the linked list. Assume unique elements are stored in the list.
+    public void delete(int elem) 	
