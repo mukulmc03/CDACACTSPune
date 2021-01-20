@@ -1,0 +1,5 @@
+ADS ASSIGNMENT DAY10
+
+
+Q10.1 Implemenet the following function for a Binary Search Tree:
+ a) public void delete(int elem); // To remove "elem" from the binary search tree
