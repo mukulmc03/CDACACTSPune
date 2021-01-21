@@ -1,0 +1,10 @@
+ADS ASSIGNMENT DAY 13
+
+Q13.1 Implement following function to find an element in an unsorted array, use sequential/linear search.
+ boolean linearSearch(int[] arr, int elem); // Check if "elem" is present in the unsorted array or not. Return true/false.
+
+Q13.2 Implement following function to sort the element elements of an array in ascending order, use Bubble Sort.
+ void bubbleSort(int[] arr);
+
+Q13.3 Implement following function to find an element in a sorted array, use binary search.
+ boolean binarySearch(int[] arr, int elem); // Check if "elem" is present in the sorted array or not. Return true/false.	
