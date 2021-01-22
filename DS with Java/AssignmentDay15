@@ -1,0 +1,4 @@
+ADS ASSIGNMENT DAY 15
+
+Q15.1  Implement one of the following two function to sort the element elements of an array in ascending order, use Merge Sort OR Heap Sort.
+ void mergeSort(int[] arr);
