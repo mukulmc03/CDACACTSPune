@@ -1,0 +1,5 @@
+ADS ASSIGNMENT DAY 16
+
+
+Q16.1  Implement Hash Table class that handle colission using Chaining (using linked list or BST class implemented previously).
+Refer to SimpleHashTable.java

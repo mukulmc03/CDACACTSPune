@@ -1,0 +1,28 @@
+ADS Official INTERNAL Assignment
+Date of Assignment : 26-01-2021
+Date of Submission : 31-01-2021
+
+
+Design data structure to store telephone directory of phone users.
+For every user, following information should be stored:
+1. Name
+2. Address
+3. Phone number
+
+Data structure should permit following operations.
+1. Add information about a user.
+2. Delete user information.
+3. Search a user based on phone number. ( Since no two user can have the same phone number, this search should return information about one user, if phone number exists )
+4. Search a user based on name. ( Since multiple users can have same name, this search can return multiple values ).
+
+There will be more search operations as compared to add and delete operations, hence, appropriate data structure and algorithm should be used that optimise for efficient search operations.
+
+
+
+Marks distribution:
+1. Design of data structure - 4 Marks.
+2. Explain the reason for choosing the data structure and how do it help in optimising for fast search, based on phone number and name. - 2 Marks.
+3. State the time complexity of add and search operations - 1 Mark.
+4. Implementation of the system - 3 Marks.
+5. Correctness of output - 3 Marks.
+6. Error handling - 2 Marks.
