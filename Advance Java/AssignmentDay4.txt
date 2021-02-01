@@ -1,0 +1,75 @@
+Day 1
+1. Revise class work n ensure DB connectivity.
+2.Solve customer management CRUD application
+
+2.1 Copy my_customers table & data in your DB. (ref : day1-data\day1-help\sql_for_mysql.cmds.txt)
+
+2.2 Create Customer POJO , DAO & Tester for the following
+2.3 Menu
+1. User Login
+I/P email n passsord
+O/P In case of success : display complete customer details . In case of invalid login : error mesg
+eg : In ICustomerDao
+Customer authenticateUser(email, pwd) throws SQLException
+
+2. New User registration
+I/P all details (except customer id)
+O/P message
+
+3. Change password
+I/P : email ,old pwd , new pwd
+O/P message
+
+4. Un subscribe Customer
+i/p : customer id
+O/P message
+
+Reading exercise
+Please go through following readmes , from uploaded web_prog_prerequisites.zip : <web basics> folder
+1. HTTP_basics.txt
+2. web_server_basics.txt
+3. response content type.txt
+
+
+Day 2
+Revise invocation of stored procedure.
+0.Confirm working of tomcat server in your newly created Java EE workspace
+1. Create lab2.1 as dynamic web project.
+Add welcome HTML page n test it from client side.
+Deploy HelloServlet , using annotation (with the help of lab faculties , concepts will be covered in tomorrow's theory session) , to confirm the life cycle of servlet.
+
+2. Copy supplied input.html under WebContent
+Write a InputServlet to display 
+user name , Favourite Colors chosen , chosen browser , city & information about client
+(With the help of lab faculty)
+
+3. Refer to voting case study.
+Complete POJO , DBUtils & DAO layer for user authentication.
+3.1 <pojos> : Voter, Candidate
+3.2 <dao> : IVoterDao (i/f)
+Voter validateUser(String email,String pwd) throws Exception
+3.3 <dao> : VoterDaoImpl (imple class)
+Rets null in case of invalid login or rets populated POJO(Voter) filled with Db details.
+
+Optional Part
+1. IVoterDao
+1.2 String updateVotingStatus(int voterId) throws Exc
+
+2. ICandidateDao
+2.1  List<Candidate> listCandidates() throws Exc
+2.2 String incrementVotes(int candidateId) throws Exc
+
+Day3
+1. Revise class work , by importing day3.1 in your workspace
+2. Complete DAO,POJO, DBUtils for voting assignment
+3. Complete UserAuthentication servlet. Use redirect technique to navigate voter to CandidateList servlet. (MUST)
+4. If possible , with the help of lab faculty , 
+create dynamically generated form , to display candidate list.
+5. Optional :
+Try admin login part.
+
+Day 4
+1. Revise cookie based session tracking
+2. Revise HttpSession based session tracking
+3. Revise online book shop case study
+4. Try to complete voting case study.
