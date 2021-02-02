@@ -4,4 +4,4 @@ Q17.1 Implement class to store a graph using Adjacency List (using linked list c
 Also implement following functions in the class.
 
 public void addEdge(int v, int u);
-public void dfs(int startVertex); // Perform Depth First Search Traversal of graph
+public void dfs(int startVertex); // Perform Depth First Search Traversal of graph.	
