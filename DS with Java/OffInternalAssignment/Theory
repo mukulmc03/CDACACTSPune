@@ -1,0 +1,18 @@
+1. Design of data structure. 
+	
+	I have used Array data structure to solve this assignment, because array has simple mechanism.
+	I have used 3 linked - arrays to store name, number & address.
+
+
+2. Explain the reason for choosing the data structure and how do it help in optimising for fast search, based on phone number and name.
+
+	I chose array as it is simple to implement and easy to manage. It uses linear search approach to search elements based on phone number & name.
+
+
+3. State the time complexity of add and search operations.
+
+	Time complexity of Data Structure implemented in the system is as follows : 
+
+		Worst-case performance	O(n)
+		Best-case performance	O(1)
+		Average performance		O(n/2)
